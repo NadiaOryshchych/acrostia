@@ -49,3 +49,68 @@
   font-weight: 900;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Damion';
+  src: url('../fonts/Damion.eot');
+  src: local('Damion'),
+    url('../fonts/Damion.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Damion.woff2') format('woff2'),
+    url('../fonts/Damion.woff') format('woff'),
+    url('../fonts/Damion.ttf') format('truetype'),
+    url('../fonts/Damion.svg#Damion') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.eot');
+  src: local('Lato Regular'), local('Lato-Regular'),
+    url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Regular.woff2') format('woff2'),
+    url('../fonts/Lato-Regular.woff') format('woff'),
+    url('../fonts/Lato-Regular.ttf') format('truetype'),
+    url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Light.eot');
+  src: local('Lato-Light'),
+    url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Light.woff2') format('woff2'),
+    url('../fonts/Lato-Light.woff') format('woff'),
+    url('../fonts/Lato-Light.ttf') format('truetype'),
+    url('../fonts/Lato-Light.svg#Lato-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Bold.eot');
+  src: local('Lato Bold'), local('Lato-Bold'),
+    url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Bold.woff2') format('woff2'),
+    url('../fonts/Lato-Bold.woff') format('woff'),
+    url('../fonts/Lato-Bold.ttf') format('truetype'),
+    url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Black.eot');
+  src: local('Lato Black'), local('Lato-Black'),
+    url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Black.woff2') format('woff2'),
+    url('../fonts/Lato-Black.woff') format('woff'),
+    url('../fonts/Lato-Black.ttf') format('truetype'),
+    url('../fonts/Lato-Black.svg#Lato-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
