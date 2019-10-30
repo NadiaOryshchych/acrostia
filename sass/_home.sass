@@ -1,0 +1,38 @@
+.home
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  text-align: center
+  color: $main-color
+  background-color:  $home-bg-color
+  z-index: 1
+  &__title
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin: 0 auto
+    padding: 30px 50px
+    max-width: 840px
+    background-color: rgba($text-color, 0.4)
+    border-radius: 4px
+    &_part-1
+      width: 50%
+      +font-light
+      font-size: 60px
+      line-height: 58px
+      text-align: right
+    &_part-2
+      width: 50%
+      +font-black
+      font-size: 138px
+      line-height: 138px
+      text-align: left
+
+@media (max-width: 992px)
+  .home
+    &__title
+      &_part-1, &_part-2
+        width: 100%
+        text-align: center

@@ -1,0 +1,31 @@
+.header
+  position: fixed
+  height: 75px
+  width: 100%
+  background-color: rgba($home-bg-color, 0.2)
+  box-shadow: 0px 20px 47px 41px rgba($home-bg-color, 0.2)
+  z-index: 2
+  &_inner
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    // align-items: flex-end
+
+.logo
+  font-family: $font-logo, serif
+  font-size: 50px
+  align-self: flex-end
+
+.menu
+  font-size: 18px
+  &__list
+    height: 100%
+    list-style: none
+    display: flex
+    align-items: center
+    &__item
+      width: 100px
+      text-align: center
+      &:hover
+        cursor: pointer
+        text-shadow: 0 0 10px $home-bg-color

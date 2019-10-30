@@ -1,0 +1,60 @@
+.work
+  background-color: $work-color
+  &__menu
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-top: 55px
+    padding: 32px 0
+    +font-bold
+    // +font-regular
+    // font-weight: bold
+    border-top: solid 1px rgba($text-color, 0.8)
+    border-bottom: solid 1px rgba($text-color, 0.8)
+    &-name
+      font-size: 20px
+      text-transform: uppercase
+    &-list
+      display: flex
+      list-style: none
+      font-size: 16px
+      li
+        margin: 0 10px
+        padding: 6px 12px 10px
+        border-radius: 5px
+        &:hover
+          background-color: #f5c149
+  &__groups
+    margin-top: 25px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__item
+    display: flex
+    margin: 20px auto
+    flex-basis: 260px
+    height: 250px
+    background-color: #f5c149
+    border-radius: 5px
+    &-text
+      align-self: flex-end
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 50px
+      color: #727272
+      background-color: #eeeeee
+      border-bottom-left-radius: 5px
+      border-bottom-right-radius: 5px
+      &::after
+        content: ''
+        position: absolute
+        bottom: 50px
+        right: 50%
+        transform: translateX(50%)
+        border: 20px solid transparent
+        border-bottom: 20px solid #eeeeee

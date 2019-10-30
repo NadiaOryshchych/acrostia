@@ -1,0 +1,39 @@
+.services
+  background-color: $services-color
+  &__subtitle
+    margin-bottom: 20px
+    font-size: 20px
+    text-transform: uppercase
+  &__mark
+    color: lighten(saturate($services-color, 26.25), 27.65)
+  &__blocks
+    margin-top: 80px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__block
+    margin: 20px auto
+    padding: 40px 20px
+    width: 260px
+    background-color: lighten(saturate($services-color, 10.27), 6.08)
+    border-radius: 5px
+    &__img
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 130px
+      height: 130px
+      margin: 0 auto
+      background-color: $text-color
+      border: solid 5px lighten(saturate($services-color, 10.27), 6.08)
+      box-shadow: 0 0 0 5px #fff
+      border-radius: 50%
+    &__title
+      margin-top: 25px
+      +font-light
+      font-size: 30px
+      text-transform: uppercase
+    &__descr
+      margin-top: 45px
+      +font-regular
+      font-size: 14px

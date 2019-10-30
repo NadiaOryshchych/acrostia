@@ -1,42 +1,89 @@
 $text-color: #fff
-
-$home-bg-color: #2c3e50
-$home-active-color: #74c7d5
+// голубий
+$main-color: #74c7d5
 $home-text-color: #74c7d5
-$services-bg-color: #b24a50
-$services-active-color: #df5c64
-$services-block-color: #c45158
-$services-text-color: #ec9da2
-$about-bg-color: #665464
-$about-active-color: #91778e
-$about-text-color: #a1859e // можливо просто білий з прозорістю
-$about-people-color: #5b4b59
-$about-people-text-color: #a1ca6c
-$about-people-active-color: #df5c64
-$about-people-text-active-color: #d9796a
-$fb-icon-color: #4f689e
 $twit-icon-color: #74c7d5
+  
+$home-bg-color: #2c3e50
+
+// рожевий
+$services-color: #b24a50
+$services-active-color: #df5c64
+$services-active-color: lighten(saturate($services-color, 25.91), 12.35)
+$about-people-active-color: #df5c64
 $google-icon-color: #df5c64
-$lin-icon-color: #3e61af
-$btn-color: #a1ca6c
-$work-bg-color: #81a256
-$work-active-color: #a1ca6c
-$work-text-active-color: #f5c149
-$contact-bg-color: #75b4aa
-$contact-active-color: #82c8bd
 $contact-btn-color: #df5c64
+$about-people-text-active-color: #d9796a
+$about-people-text-active-color: lighten(saturate(adjust-hue($services-color, -348), 18.09), 13.92)
+$about-people-text-active-color: lighten( $services-color, 13.921568627450974 )
+$about-people-text-active-color: lighten( #df5c64, 1.5686274509803866 ) 
+$services-block-color: #c45158
+$services-block-color: lighten(saturate($services-color, 10.27), 6.08)
+$services-text-color: #ec9da2
+$services-text-color: lighten(saturate($services-color, 26.25), 27.65)
+
+// фіолетовий
+$about-color: #665464
+$about-active-color: #91778e
+$about-active-color: lighten(saturate(#665464, 0.89), 15.29)
+$about-active-color: lighten( #665464, 15.294117647058812 )
+$about-text-color: #a1859e // можливо просто білий з прозорістю
+$about-text-color: lighten(saturate($about-color, 3.29), 21.18)
+$about-text-color: lighten($about-color, 21.18)
+$about-block-color: #594957
+$about-block-color: darken(saturate(adjust-hue($about-color, 1), 0.20), 4.71)
+$about-block-color: darken( $about-color, 4.705882352941185)
+$about-block-active-color: #524350
+$about-block-active-color: darken(saturate(adjust-hue(#665464, 1), 0.39), 7.25)
+$about-block-active-color: darken($about-color, 7.25)
+$about-people-icon-color: #5b4b59
+$about-people-icon-color: darken(desaturate(adjust-hue(#665464, 1), 0.04), 3.92)
+$about-people-icon-color: darken( #665464, 3.9215686274509878)
+
+
+$fb-icon-color: #4f689e
+$lin-icon-color: #3e61af
+
+// зелений
+$work-color: #81a256
+$work-active-color: #a1ca6c
+$work-active-color: lighten(saturate($work-color, 16.35), 12.16)
+$about-people-text-color: #a1ca6c
+$about-btn-color: #a1ca6c
+
+$work-btn-active-color: #f5c149 // жовтий
+
+// бірюзовий
+$contact-color: #75b4aa
+$contact-bg-color: darken(desaturate(adjust-hue($main-color, -18), 24.01), 6.27)
+$contact-bg-color: darken( $main-color, 6.274509803921568)
+$contact-active-color: #82c8bd
+$contact-active-color: lighten(saturate(#75b4aa, 9.31), 6.47)
+$contact-active-color: lighten( #75b4aa, 6.470588235294109 )
 $contact-form-color: #68a097
+$contact-form-color: darken(desaturate($contact-color, 6.81), 6.47)
+$contact-form-color: darken( #75b4aa, 6.47058823529413)
 $footer-bg-color: #68a097
+$footer-bg-color: darken(desaturate($contact-color, 6.81), 6.47)
 $footer-bg-icon-color: #82c7bc
+$footer-bg-icon-color: lighten(saturate($contact-color, 8.54), 6.27)
+$footer-bg-icon-color: lighten( #75b4aa, 6.274509803921553 )
 
 
-
-$lighten-color: lighten($light-color, 26%)
 $button-color: #ff5151
 $bright-color: #ff5151
 
+$font-size: 10px
 $font-logo: 'Damion'
-$font-regular: 'Maven Pro Regular'
-$font-medium: 'Maven Pro Medium'
-$font-bold: 'Maven Pro Bold'
-$font-black: 'Maven Pro Black'
+=font-regular
+  font-family: 'Lato Regular', sans-serif
+  font-weight: normal
+=font-light
+  font-family: 'Lato Light', sans-serif
+  font-weight: 300
+=font-bold
+  font-family: 'Lato Bold', sans-serif
+  font-weight: bold
+=font-black
+  font-family: 'Lato Black', sans-serif
+  font-weight: 900
