@@ -12,15 +12,16 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header_inner">
+      <div class="header__inner">
         <div class="logo">acrostia</div>
         <nav class="menu">
+          <!-- js-menu - клас для використання в js, щоб розробники не напутали -->
           <ul class="menu__list">
-            <li class="menu__list__item">Home</li>
-            <li class="menu__list__item">Services</li>
-            <li class="menu__list__item">About</li>
-            <li class="menu__list__item">Work</li>
-            <li class="menu__list__item">Contacts</li>
+            <li class="menu__item">Home</li>
+            <li class="menu__item">Services</li>
+            <li class="menu__item">About</li>
+            <li class="menu__item">Work</li>
+            <li class="menu__item">Contacts</li>
           </ul>
         </nav>
       </div>
@@ -60,44 +61,44 @@
         Quisque
         at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
       </div>
-      <div class="services__blocks">
-        <div class="services__block">
-          <div class="services__block__img">
+      <div class="services__group">
+        <div class="services__item">
+          <div class="services__img">
             <img src="img/services/lightball.png" alt="service 1">
           </div>
-          <div class="services__block__title">researching</div>
-          <div class="services__block__descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in
+          <div class="services__title">researching</div>
+          <div class="services__descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore.</div>
         </div>
-        <div class="services__block">
-          <div class="services__block__img">
+        <div class="services__item">
+          <div class="services__img">
             <img src="img/services/magic-wand.png" alt="service 2">
           </div>
-          <div class="services__block__title">design</div>
-          <div class="services__block__descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in
+          <div class="services__title">design</div>
+          <div class="services__descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore.</div>
         </div>
-        <div class="services__block">
-          <div class="services__block__img">
+        <div class="services__item">
+          <div class="services__img">
             <img src="img/services/giars.png" alt="service 3">
           </div>
-          <div class="services__block__title">development</div>
-          <div class="services__block__descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in
+          <div class="services__title">development</div>
+          <div class="services__descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore.</div>
         </div>
-        <div class="services__block">
-          <div class="services__block__img">
+        <div class="services__item">
+          <div class="services__img">
             <img src="img/services/rocket.png" alt="service 4">
           </div>
-          <div class="services__block__title">launch</div>
-          <div class="services__block__descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in
+          <div class="services__title">launch</div>
+          <div class="services__descr">Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section about">
+  <section class="section about-team">
     <div class="container">
       <h2 class="section__title">Who we are & what we do</h2>
       <div class="section__subtitle">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur
@@ -106,80 +107,80 @@
         Quisque
         at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
       </div>
-      <div class="about__btn">meet the team</div>
-      <div class="about__cards">
-        <div class="about__card">
-          <div class="about__card__img"></div>
-          <div class="about__card__name">Jack Doe</div>
-          <div class="about__card__pos">General manager</div>
-          <div class="about__card__contacts">
-            <a class="about__card__contacts-fb" href="https://www.facebook.com">
+      <div class="about-team__btn">meet the team</div>
+      <div class="about-team__group">
+        <div class="about-team__card">
+          <div class="about-team__img"></div>
+          <div class="about-team__name">Jack Doe</div>
+          <div class="about-team__pos">General manager</div>
+          <div class="about-team__contacts">
+            <a class="about-team__contacts_fb" href="https://www.facebook.com">
               <img src="img/icon/facebook.png" alt="facebook">
             </a>
-            <a class="about__card__contacts-tw" href="https://twitter.com">
+            <a class="about-team__contacts_tw" href="https://twitter.com">
               <img src="img/icon/twitter.png" alt="twitter">
             </a>
-            <a class="about__card__contacts-g" href="https://www.google+.com">
+            <a class="about-team__contacts_g" href="https://www.google+.com">
               <img src="img/icon/google+.png" alt="google+">
             </a>
-            <a class="about__card__contacts-lin" href="https://www.linkedin.com">
+            <a class="about-team__contacts_lin" href="https://www.linkedin.com">
               <img src="img/icon/linkedin.png" alt="linkedin">
             </a>
           </div>
         </div>
-        <div class="about__card">
-          <div class="about__card__img"></div>
-          <div class="about__card__name">John Smith</div>
-          <div class="about__card__pos">Design Master</div>
-          <div class="about__card__contacts">
-            <a class="about__card__contacts-fb" href="https://www.facebook.com">
+        <div class="about-team__card">
+          <div class="about-team__img"></div>
+          <div class="about-team__name">John Smith</div>
+          <div class="about-team__pos">Design Master</div>
+          <div class="about-team__contacts">
+            <a class="about-team__contacts_fb" href="https://www.facebook.com">
               <img src="img/icon/facebook.png" alt="facebook">
             </a>
-            <a class="about__card__contacts-tw" href="https://twitter.com">
+            <a class="about-team__contacts_tw" href="https://twitter.com">
               <img src="img/icon/twitter.png" alt="twitter">
             </a>
-            <a class="about__card__contacts-g" href="https://www.google+.com">
+            <a class="about-team__contacts_g" href="https://www.google+.com">
               <img src="img/icon/google+.png" alt="google+">
             </a>
-            <a class="about__card__contacts-lin" href="https://www.linkedin.com">
+            <a class="about-team__contacts_lin" href="https://www.linkedin.com">
               <img src="img/icon/linkedin.png" alt="linkedin">
             </a>
           </div>
         </div>
-        <div class="about__card">
-          <div class="about__card__img"></div>
-          <div class="about__card__name">James Horn</div>
-          <div class="about__card__pos">Developer Ninja</div>
-          <div class="about__card__contacts">
-            <a class="about__card__contacts-fb" href="https://www.facebook.com">
+        <div class="about-team__card">
+          <div class="about-team__img"></div>
+          <div class="about-team__name">James Horn</div>
+          <div class="about-team__pos">Developer Ninja</div>
+          <div class="about-team__contacts">
+            <a class="about-team__contacts_fb" href="https://www.facebook.com">
               <img src="img/icon/facebook.png" alt="facebook">
             </a>
-            <a class="about__card__contacts-tw" href="https://twitter.com">
+            <a class="about-team__contacts_tw" href="https://twitter.com">
               <img src="img/icon/twitter.png" alt="twitter">
             </a>
-            <a class="about__card__contacts-g" href="https://www.google+.com">
+            <a class="about-team__contacts_g" href="https://www.google+.com">
               <img src="img/icon/google+.png" alt="google+">
             </a>
-            <a class="about__card__contacts-lin" href="https://www.linkedin.com">
+            <a class="about-team__contacts_lin" href="https://www.linkedin.com">
               <img src="img/icon/linkedin.png" alt="linkedin">
             </a>
           </div>
         </div>
-        <div class="about__card">
-          <div class="about__card__img"></div>
-          <div class="about__card__name">Jozeph Green</div>
-          <div class="about__card__pos">SEO guru</div>
-          <div class="about__card__contacts">
-            <a class="about__card__contacts-fb" href="https://www.facebook.com">
+        <div class="about-team__card">
+          <div class="about-team__img"></div>
+          <div class="about-team__name">Jozeph Green</div>
+          <div class="about-team__pos">SEO guru</div>
+          <div class="about-team__contacts">
+            <a class="about-team__contacts_fb" href="https://www.facebook.com">
               <img src="img/icon/facebook.png" alt="facebook">
             </a>
-            <a class="about__card__contacts-tw" href="https://twitter.com">
+            <a class="about-team__contacts_tw" href="https://twitter.com">
               <img src="img/icon/twitter.png" alt="twitter">
             </a>
-            <a class="about__card__contacts-g" href="https://www.google+.com">
+            <a class="about-team__contacts_g" href="https://www.google+.com">
               <img src="img/icon/google+.png" alt="google+">
             </a>
-            <a class="about__card__contacts-lin" href="https://www.linkedin.com">
+            <a class="about-team__contacts_lin" href="https://www.linkedin.com">
               <img src="img/icon/linkedin.png" alt="linkedin">
             </a>
           </div>
@@ -266,8 +267,8 @@
       </div>
       <!-- можливо тут треба використати тег <address> -->
       <div class="contact__blocks">
-        <div class="contact__address">
-          <div class="contact__blocks__name">Address</div>
+        <div class="contact__data">
+          <div class="contact__blocks-name">Address</div>
           <!-- <div class="contact__details"> -->
           <div class="address">
             <div class="contact__header">Acrostia</div>
@@ -275,22 +276,22 @@
             Sevenoaks TN14 7HR, UK
           </div>
           <div class="phone">
-            <pre><span class="contact_mark">Phone:</span>  +44 555 555 555</pre>
+            <pre><span class="contact-mark">Phone:</span>  +44 555 555 555</pre>
           </div>
           <div class="fax">
-            <pre><span class="contact_mark">Fax:</span>    +44 556 555 555</pre>
+            <pre><span class="contact-mark">Fax:</span>    +44 556 555 555</pre>
           </div>
           <div class="email">
-            <pre><span class="contact_mark">E-mail:</span> info@acrostia.com</pre>
+            <pre><span class="contact-mark">E-mail:</span> info@acrostia.com</pre>
           </div>
           <div class="skype">
-            <pre><span class="contact_mark">Skype:</span>  Ac0stia</pre>
+            <pre><span class="contact-mark">Skype:</span>  Ac0stia</pre>
           </div>
           <!-- </div> -->
           <div class="contact__map"></div>
         </div>
         <div class="contact__form">
-          <div class="contact__blocks__name">Ask a question</div>
+          <div class="contact__blocks-name">Ask a question</div>
           <form action="send.php" method="POST" class="form">
             <input class="form__field" required type="text" name="name" placeholder="Name">
             <input class="form__field" required type="email" name="email" placeholder="E-mail">
@@ -305,16 +306,16 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__icons">
-        <a class="footer__icon footer__icon-fb" href="https://www.facebook.com">
+        <a class="footer__icon footer__icon_fb" href="https://www.facebook.com">
           <img src="img/icon/facebook.png" alt="facebook">
         </a>
-        <a class="footer__icon footer__icon-tw" href="https://twitter.com">
+        <a class="footer__icon footer__icon_tw" href="https://twitter.com">
           <img src="img/icon/twitter.png" alt="twitter">
         </a>
-        <a class="footer__icon footer__icon-g" href="https://www.google+.com">
+        <a class="footer__icon footer__icon_g" href="https://www.google+.com">
           <img src="img/icon/google+.png" alt="google+">
         </a>
-        <a class="footer__icon footer__icon-lin" href="https://www.linkedin.com">
+        <a class="footer__icon footer__icon_lin" href="https://www.linkedin.com">
           <img src="img/icon/linkedin.png" alt="linkedin">
         </a>
       </div>

@@ -1,4 +1,4 @@
-.about
+.about-team
   background-color: $about-color
   &__btn
     position: relative
@@ -24,7 +24,7 @@
       box-shadow: 0 0 10px lighten(saturate($work-color, 16.35), 12.16)
       // .about__btn::after
       //   box-shadow: 0 0 10px lighten(saturate($work-color, 16.35), 12.16)
-  &__cards
+  &__group
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -34,69 +34,66 @@
     width: 260px
     background-color: darken($about-color, 4.71)
     border-radius: 5px
-    &__img
+  &__img
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 155px
+    height: 155px
+    margin: 0 auto
+    background: $text-color url('../img/employee.png') center 10px no-repeat
+    border: solid 2px $text-color
+    box-shadow: 0 0 0 5px lighten($about-color, 21.18)
+    border-radius: 50%
+  &__name
+    margin-top: 25px
+    +font-black
+    font-size: 25px
+    color: lighten($about-color, 40)
+    text-transform: uppercase
+  &__pos
+    margin-top: 15px
+    +font-regular
+    font-size: 14px
+    color: lighten(saturate($work-color, 16.35), 12.16)
+  &__contacts
+    margin-top: 35px
+    display: flex
+    justify-content: space-between
+    a
       display: flex
       justify-content: center
       align-items: center
-      width: 155px
-      height: 155px
-      margin: 0 auto
-      background: $text-color url('../img/employee.png') center 10px no-repeat
-      border: solid 2px $text-color
-      box-shadow: 0 0 0 5px lighten($about-color, 21.18)
+      width: 30px
+      height: 30px
+      text-align: center
+      background-color: lighten($about-color, 21.18)
       border-radius: 50%
-    &__name
-      margin-top: 25px
-      +font-black
-      font-size: 25px
-      color: lighten($about-color, 40)
-      text-transform: uppercase
-    &__pos
-      margin-top: 15px
-      +font-regular
-      font-size: 14px
-      color: lighten(saturate($work-color, 16.35), 12.16)
-    &__contacts
-      margin-top: 35px
-      display: flex
-      justify-content: space-between
-      a
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 30px
-        height: 30px
-        text-align: center
-        background-color: lighten($about-color, 21.18)
-        border-radius: 50%
-      &-fb img
-        width: 25%
-      &-tw img
-        width: 45%
-      &-g img
-        width: 50%
-      &-lin img
-        width: 45%
-    &:hover
-      background-color: darken($about-color, 7.25)
-      cursor: pointer
-      .about__card
-        &__img
-          background-image: url('../img/employee-active.png')
-          box-shadow: 0 0 0 5px lighten(saturate($services-color, 25.91), 12.35)
-        &__name
-          color: $text-color
-        &__pos
-          color: lighten(saturate($services-color, 25.91), 12.35)
-        &__contacts
-          &-fb
-            background-color: #4f689e
-          &-tw
-            background-color: #74c7d5
-          &-g
-            background-color: #df5c64
-          &-lin
-            background-color: #3e61af
-
-
-      
+    &-fb img
+      width: 25%
+    &-tw img
+      width: 45%
+    &-g img
+      width: 50%
+    &-lin img
+      width: 45%
+  &:hover
+    background-color: darken($about-color, 7.25)
+    cursor: pointer
+    .about__card
+      &__img
+        background-image: url('../img/employee-active.png')
+        box-shadow: 0 0 0 5px lighten(saturate($services-color, 25.91), 12.35)
+      &__name
+        color: $text-color
+      &__pos
+        color: lighten(saturate($services-color, 25.91), 12.35)
+      &__contacts
+        &-fb
+          background-color: #4f689e
+        &-tw
+          background-color: #74c7d5
+        &-g
+          background-color: #df5c64
+        &-lin
+          background-color: #3e61af
