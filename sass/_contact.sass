@@ -4,18 +4,19 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    margin-top: 120px
     text-align: left
     &-name
-      margin-bottom: 25px
+      margin-top: 40px
       +font-light
       font-size: 30px
+      width: 100%
   &__data
+    position: relative
     width: 49%
     +font-regular
     font-size: 16px
   &__header
-    margin-bottom: 15px
+    margin: 20px 0 15px
     +font-bold
     font-size: 20px
     opacity: 0.8
@@ -23,12 +24,22 @@
     margin-bottom: 75px
   &-mark
     opacity: 0.8
+  &__map
+    position: absolute;
+    top: 94px;
+    left: 270px;
+    width: 260px
+    height: 220px
+    border-radius: 5px
+    overflow: hidden
   &__form
     width: 49%
   .form
     display: flex
     flex-wrap: wrap
+    justify-content: space-between
     &__field
+      margin: 20px 0 0
       padding: 13px 18px
       background-color: darken(desaturate($contact-color, 6.81), 6.47)
       outline: none
@@ -37,16 +48,13 @@
       &::placeholder
         color: $contact-color 
     input
-      max-width: 48.1%
-      &:first-child
-        margin-right: 20px
+      width: 48.1%
     textarea
-      margin: 20px 0 30px
       width: 100%
       height: 155px
     &__btn
       display: block
-      margin: 0 auto
+      margin: 20px auto 0
       padding: 10px 90px
       +font-black
       font-size: 26px
@@ -60,3 +68,26 @@
       &:hover
         cursor: pointer
         box-shadow: 0 5px lighten(saturate($services-color, 25.91), 2.35), 0 0 10px lighten(saturate($services-color, 25.91), 12.35)
+
+@media (max-width: 1200px)
+  .contact
+    &__blocks
+      &-name
+        text-align: center
+    &__data
+      width: 100%
+      max-width: 550px
+      margin-left: auto
+      margin-right: auto
+    &__form
+      width: 100%
+      max-width: 700px
+      margin-left: auto
+      margin-right: auto
+
+
+@media (max-width: 992px)
+  .contact
+    .form
+      input
+        width: 100%

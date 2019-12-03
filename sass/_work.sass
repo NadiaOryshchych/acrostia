@@ -5,7 +5,6 @@
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
-    margin-top: 55px
     padding: 32px 0
     +font-bold
     // +font-regular
@@ -24,20 +23,42 @@
         padding: 6px 12px 10px
         border-radius: 5px
         &:hover
+          cursor: pointer
           background-color: #f5c149
   &__groups
-    margin-top: 25px
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
   &__item
+    margin: 40px auto 0
     display: flex
-    margin: 20px auto
+    flex-direction: column
     flex-basis: 260px
     height: 250px
-    background-color: #f5c149
     border-radius: 5px
+    overflow: hidden
+    &-img
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 200px
+      background-color: #f5c149
+      transition: .5s ease-in-out;
+      &::after
+        position: absolute
+        content: '+'
+        width: 50px
+        height: 50px
+        display: none
+        justify-content: center
+        align-items: center
+        +font-light
+        font-size: 50px
+        line-height: 50px
+        border: 2px solid $text-color
+        border-radius: 50%
     &-text
       align-self: flex-end
       position: relative
@@ -48,13 +69,17 @@
       height: 50px
       color: #727272
       background-color: #eeeeee
-      border-bottom-left-radius: 5px
-      border-bottom-right-radius: 5px
       &::after
         content: ''
         position: absolute
-        bottom: 50px
+        bottom: 49px
         right: 50%
         transform: translateX(50%)
         border: 20px solid transparent
         border-bottom: 20px solid #eeeeee
+    &:hover
+      cursor: pointer
+      .work__item-img
+        filter: brightness(70%)
+        &::after
+          display: flex

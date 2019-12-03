@@ -30,13 +30,18 @@ img
 .section
 	padding: 180px 0 120px
 	text-align: center
+	@media (max-width: 1200px)
+		padding: 80px 0
+	@media (max-width: 768px)
+		padding: 40px 0
 	&__title
 		margin-bottom: 30px
 		+font-light
 		font-size: $font-size*6
 		@media (max-width: 768px)
-			font-size: 29px	
+			font-size: 35px	
 	&__subtitle
+		margin-bottom: 60px
 		+font-regular
 		font-size: $font-size*1.4
 		opacity: 0.8

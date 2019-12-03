@@ -2,7 +2,7 @@
   background-color: $about-color
   &__btn
     position: relative
-    margin: 60px auto 40px
+    margin: 0 auto 40px
     padding: 10px 0
     height: 50px
     width: 275px
@@ -14,7 +14,7 @@
     &::after
       content: ''
       position: absolute
-      top: 50px
+      top: 49px
       right: 50%
       transform: translateX(50%)
       border: 20px solid transparent
@@ -34,6 +34,26 @@
     width: 260px
     background-color: darken($about-color, 4.71)
     border-radius: 5px
+    &:hover
+      background-color: darken($about-color, 7.25)
+      cursor: pointer
+      .about-team
+        &__img
+          background-image: url('../img/employee-active.png')
+          box-shadow: 0 0 0 5px lighten(saturate($services-color, 25.91), 12.35)
+        &__name
+          color: $text-color
+        &__pos
+          color: lighten(saturate($services-color, 25.91), 12.35)
+        &__contacts
+          &_fb
+            background-color: #4f689e
+          &_tw
+            background-color: #74c7d5
+          &_g
+            background-color: #df5c64
+          &_lin
+            background-color: #3e61af
   &__img
     display: flex
     justify-content: center
@@ -69,31 +89,12 @@
       text-align: center
       background-color: lighten($about-color, 21.18)
       border-radius: 50%
-    &-fb img
+    &_fb img
       width: 25%
-    &-tw img
+    &_tw img
       width: 45%
-    &-g img
+    &_g img
       width: 50%
-    &-lin img
+    &_lin img
       width: 45%
-  &:hover
-    background-color: darken($about-color, 7.25)
-    cursor: pointer
-    .about__card
-      &__img
-        background-image: url('../img/employee-active.png')
-        box-shadow: 0 0 0 5px lighten(saturate($services-color, 25.91), 12.35)
-      &__name
-        color: $text-color
-      &__pos
-        color: lighten(saturate($services-color, 25.91), 12.35)
-      &__contacts
-        &-fb
-          background-color: #4f689e
-        &-tw
-          background-color: #74c7d5
-        &-g
-          background-color: #df5c64
-        &-lin
-          background-color: #3e61af
+
